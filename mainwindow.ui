@@ -30,7 +30,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="p1">
      <widget class="QLabel" name="Name">
@@ -344,7 +344,7 @@
      </widget>
     </widget>
     <widget class="QWidget" name="p2">
-     <widget class="QLabel" name="rmChoice_2">
+     <widget class="QLabel" name="rmChoiceConfirm">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -425,7 +425,7 @@
        </property>
       </widget>
      </widget>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="paymentMethod">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -443,7 +443,7 @@
        <string>Payment Method:</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton">
+     <widget class="QRadioButton" name="visaRadio">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -456,7 +456,7 @@
        <string>VISA</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton_2">
+     <widget class="QRadioButton" name="mastcrdRadio">
       <property name="geometry">
        <rect>
         <x>90</x>
@@ -469,7 +469,7 @@
        <string>Mastercard</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton_3">
+     <widget class="QRadioButton" name="amExprssRadio">
       <property name="geometry">
        <rect>
         <x>280</x>
@@ -482,7 +482,7 @@
        <string>American Express</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton_4">
+     <widget class="QRadioButton" name="discoveryRadio">
       <property name="geometry">
        <rect>
         <x>190</x>
@@ -495,7 +495,7 @@
        <string>Discovery</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="cardNumLbl">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -513,7 +513,7 @@
        <string>Card Number:</string>
       </property>
      </widget>
-     <widget class="QPlainTextEdit" name="plainTextEdit_2">
+     <widget class="QPlainTextEdit" name="cardNumInput">
       <property name="geometry">
        <rect>
         <x>120</x>
@@ -523,7 +523,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="pay">
       <property name="geometry">
        <rect>
         <x>480</x>
