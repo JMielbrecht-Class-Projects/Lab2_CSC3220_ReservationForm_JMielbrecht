@@ -30,7 +30,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="p1">
      <widget class="QLabel" name="Name">
@@ -542,6 +542,7 @@
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="page"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
