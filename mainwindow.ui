@@ -542,7 +542,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="page"/>
+    <widget class="QWidget" name="p3"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
