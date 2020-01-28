@@ -30,7 +30,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="p1">
      <widget class="QLabel" name="Name">
@@ -618,7 +618,7 @@
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>140</x>
         <y>130</y>
         <width>91</width>
         <height>16</height>
@@ -631,7 +631,7 @@
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>140</x>
         <y>160</y>
         <width>91</width>
         <height>16</height>
@@ -644,7 +644,7 @@
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>170</x>
+        <x>230</x>
         <y>160</y>
         <width>21</width>
         <height>16</height>
@@ -657,7 +657,7 @@
      <widget class="QLabel" name="label_9">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>250</x>
         <y>160</y>
         <width>81</width>
         <height>16</height>
@@ -670,7 +670,7 @@
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>140</x>
         <y>180</y>
         <width>91</width>
         <height>16</height>
@@ -683,8 +683,8 @@
      <widget class="QLabel" name="label_11">
       <property name="geometry">
        <rect>
-        <x>80</x>
-        <y>210</y>
+        <x>140</x>
+        <y>200</y>
         <width>141</width>
         <height>16</height>
        </rect>
@@ -696,8 +696,8 @@
      <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>80</x>
-        <y>230</y>
+        <x>140</x>
+        <y>220</y>
         <width>161</width>
         <height>16</height>
        </rect>
@@ -709,8 +709,8 @@
      <widget class="QLabel" name="label_13">
       <property name="geometry">
        <rect>
-        <x>80</x>
-        <y>250</y>
+        <x>140</x>
+        <y>240</y>
         <width>141</width>
         <height>16</height>
        </rect>
