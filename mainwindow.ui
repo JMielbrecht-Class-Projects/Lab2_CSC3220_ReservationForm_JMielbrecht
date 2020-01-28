@@ -30,7 +30,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="p1">
      <widget class="QLabel" name="Name">
@@ -284,8 +284,8 @@
      <widget class="QFrame" name="frame">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>360</y>
+        <x>30</x>
+        <y>370</y>
         <width>401</width>
         <height>51</height>
        </rect>
@@ -340,6 +340,32 @@
       </property>
       <property name="text">
        <string>Next Page</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="needPkgChkBx">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>340</y>
+        <width>161</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vehicle Parking Needed</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>170</y>
+        <width>151</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>What's the Difference?</string>
       </property>
      </widget>
     </widget>
@@ -542,7 +568,82 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="p3"/>
+    <widget class="QWidget" name="p3">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <italic>true</italic>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>CONFIRMATION</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Standard Room</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>30</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <italic>true</italic>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Atrium Room</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bktoForm">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>380</y>
+        <width>101</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Back to Form</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
