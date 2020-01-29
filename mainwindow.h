@@ -54,6 +54,7 @@ private slots:
     void checkShowNext();
     void checkShowNumNights();
     bool checkValidCard(const QString&cardNum);
+    void updateResValues(); //Updates values on page 2
 
     void on_visaRadio_toggled(bool checked);
 
@@ -89,5 +90,11 @@ private:
     int numKids = 0; //Initialized to 0
     int maxGuests = 0; //Changes with room type; begins at 0 to prevent invalid "next" button visibility
     bool parkingNeeded;
+    double subtotal = 0; //displayed on page 1
+    double taxes; //How much in taxes owed for visit
+    double resortFee; //$15 per night
+    double parkingFee;//$12.75 per night
+    double totalDue;
+
 };
 #endif // MAINWINDOW_H

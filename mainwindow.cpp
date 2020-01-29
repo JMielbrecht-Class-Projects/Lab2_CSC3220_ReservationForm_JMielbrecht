@@ -51,50 +51,74 @@ void MainWindow::checkShowNext()
 }
  void MainWindow::calculateCost()
 {
-     double roomCost = -1;
      switch(roomType){
        case 1:
          if(parkingNeeded){
-           roomCost = (284 + 12.75)*numNights;
+          subtotal = (284 + 12.75)*numNights;
          }
          else{
-           roomCost = 284*numNights;
+           subtotal = 284*numNights;
          }
          break;
        case 2:
        if(parkingNeeded){
-           roomCost = (325 + 12.75)*numNights;
+           subtotal = (325 + 12.75)*numNights;
          }
          else{
-           roomCost = 325*numNights;
+           subtotal = 325*numNights;
          }
          break;
        case 3:
        if(parkingNeeded){
-           roomCost = (290 + 12.75)*numNights;
+           subtotal = (290 + 12.75)*numNights;
          }
          else{
-           roomCost = 290*numNights;
+           subtotal = 290*numNights;
          }
          break;
        case 4:
        if(parkingNeeded){
-           roomCost = (350 + 12.75)*numNights;
+           subtotal = (350 + 12.75)*numNights;
          }
          else{
-           roomCost = 350*numNights;
+           subtotal = 350*numNights;
          }
          break;
        default:
-           //roomCost remains -1
+           //subtotal remains 0
          break;
      }
-     if(roomCost != -1){
-         ui->est_cost_output->setText(QString::number(roomCost));
+     if(subtotal != 0){
+         ui->est_cost_output->setText(QString::number(subtotal));
          ui->est_cost_output->setVisible(true);
+
      }
 }
+void MainWindow::updateResValues()
+{
+ //Updates room type, taxes, resort fee, parking fee, total due
+    switch(roomType){
+      case 1:
+           taxes = 0.15*284;
+        break;
+      case 2:
+           taxes = 0.15*325;
+        break;
+      case 3:
+           taxes = 0.15*290;
+        break;
+      case 4:
+           taxes = 0.15*350;
+        break;
+      default:
+          taxes = -1; //INVALID
+        break;
+    }
 
+    resortFee = numNights*15;
+    parkingFee = numNights*12.75;
+    totalDue = resortFee + subtotal; //Parking fee included in subtotal (calculated with calculateCost()
+}
  void MainWindow::on_next_clicked()
 {
      ui->stackedWidget->setCurrentIndex(1);
@@ -124,6 +148,7 @@ void MainWindow::on_queenStd_toggled(bool checked)
 {
     if(checked){
         roomType = 1;
+        ui->rmTypeOutput->setText("Standard 2 Queen Room");
         maxGuests = 4;
     }
     calculateCost();
@@ -134,6 +159,7 @@ void MainWindow::on_queenAtr_toggled(bool checked)
     if(checked){
         roomType = 2;
         maxGuests = 4;
+        ui->rmTypeOutput->setText("Atrium 2 Queen Room");
     }
     calculateCost();
     checkShowNext();
@@ -143,6 +169,7 @@ void MainWindow::on_kngStd_toggled(bool checked)
     if(checked){
         roomType = 3;
         maxGuests = 3;
+        ui->rmTypeOutput->setText("Standard 1 King Room");
     }
     calculateCost();
     checkShowNext();
@@ -152,6 +179,7 @@ void MainWindow::on_kngAtr_toggled(bool checked)
     if(checked){
         roomType = 4;
         maxGuests = 3;
+        ui->rmTypeOutput->setText("Atrium 1 King Room");
     }
     calculateCost();
     checkShowNext();
