@@ -35,8 +35,6 @@ private slots:
 
     void on_kngAtr_toggled(bool checked);
 
-    void on_numNights_valueChanged(int arg1);
-
     void on_beginDate_userDateChanged(const QDate &date);
 
     void on_endDate_userDateChanged(const QDate &date);
@@ -54,12 +52,37 @@ private slots:
     void calculateCost();
     bool checkValidResInfo();
     void checkShowNext();
+    void checkShowNumNights();
+    bool checkValidCard(const QString&cardNum);
+
+    void on_visaRadio_toggled(bool checked);
+
+    void on_mastcrdRadio_toggled(bool checked);
+
+    void on_discoveryRadio_toggled(bool checked);
+
+    void on_amExprssRadio_toggled(bool checked);
 
 private:
     Ui::MainWindow *ui;
     QString customerName;
     int roomType;
+        /*
+            ==ROOM TYPE==
+            1: Standard 2 Queen Room (Maximum Guests: 4)
+            2: Atrium 2 Queen Room (Maximum Guests: 4)
+            3: Standard 1 King Room (Maximum Guests: 3)
+            4: Atrium 1 King Room (Maximum Guests: 3)
+        */
     int numNights;
+    int cardType;
+        /*
+            ==CARD TYPE==
+            1: American Express
+            2: Visa
+            3: Mastercard
+            4: Discover
+        */
     QDate beginDate;
     QDate endDate;
     int numAdults = 0; //Initialized to 0

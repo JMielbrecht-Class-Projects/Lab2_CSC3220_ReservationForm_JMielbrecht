@@ -223,16 +223,6 @@
        </rect>
       </property>
      </widget>
-     <widget class="QSpinBox" name="numNights">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>310</y>
-        <width>71</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QSpinBox" name="adultCt">
       <property name="geometry">
        <rect>
@@ -361,6 +351,19 @@
         <width>301</width>
         <height>20</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="NUM_NIGHTS">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>290</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>[NUM_NIGHTS]</string>
       </property>
      </widget>
     </widget>
