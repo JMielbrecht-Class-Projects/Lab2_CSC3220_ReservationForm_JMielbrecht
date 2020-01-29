@@ -66,6 +66,8 @@ private slots:
 
     void on_nextButton_clicked();
 
+    void on_needPkgChkBx_stateChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
     QString customerName;

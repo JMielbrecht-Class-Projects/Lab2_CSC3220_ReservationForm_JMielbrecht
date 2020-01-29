@@ -29,6 +29,9 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(144, 175, 197);</string>
+    </property>
     <property name="currentIndex">
      <number>0</number>
     </property>
@@ -295,8 +298,8 @@
         <rect>
          <x>240</x>
          <y>10</y>
-         <width>47</width>
-         <height>14</height>
+         <width>121</width>
+         <height>16</height>
         </rect>
        </property>
        <property name="text">
@@ -326,6 +329,9 @@
         <height>23</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(51, 107, 135);</string>
+      </property>
       <property name="text">
        <string>Standard vs. Atrium: What's the Difference?</string>
       </property>
@@ -343,10 +349,10 @@
      <widget class="QLabel" name="NUM_NIGHTS">
       <property name="geometry">
        <rect>
-        <x>200</x>
-        <y>290</y>
-        <width>91</width>
-        <height>16</height>
+        <x>211</x>
+        <y>282</y>
+        <width>117</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="text">
@@ -375,6 +381,9 @@
         <height>28</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(51, 107, 135);</string>
+      </property>
       <property name="text">
        <string>Next Page</string>
       </property>
@@ -384,8 +393,8 @@
      <widget class="QLabel" name="rmChoiceConfirm">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>10</y>
+        <x>200</x>
+        <y>12</y>
         <width>151</width>
         <height>16</height>
        </rect>
@@ -397,7 +406,7 @@
      <widget class="QLabel" name="tax">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>200</x>
         <y>30</y>
         <width>47</width>
         <height>14</height>
@@ -410,8 +419,8 @@
      <widget class="QLabel" name="parkFee">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>50</y>
+        <x>200</x>
+        <y>48</y>
         <width>81</width>
         <height>16</height>
        </rect>
@@ -423,8 +432,8 @@
      <widget class="QLabel" name="resortFee">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>70</y>
+        <x>200</x>
+        <y>66</y>
         <width>81</width>
         <height>16</height>
        </rect>
@@ -436,8 +445,8 @@
      <widget class="QFrame" name="totalDueFm">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>90</y>
+        <x>200</x>
+        <y>87</y>
         <width>261</width>
         <height>80</height>
        </rect>
@@ -491,8 +500,8 @@
      <widget class="QLabel" name="paymentMethod">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>180</y>
+        <x>200</x>
+        <y>177</y>
         <width>121</width>
         <height>16</height>
        </rect>
@@ -509,8 +518,8 @@
      <widget class="QRadioButton" name="visaRadio">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>210</y>
+        <x>200</x>
+        <y>204</y>
         <width>83</width>
         <height>18</height>
        </rect>
@@ -522,8 +531,8 @@
      <widget class="QRadioButton" name="mastcrdRadio">
       <property name="geometry">
        <rect>
-        <x>90</x>
-        <y>210</y>
+        <x>300</x>
+        <y>207</y>
         <width>83</width>
         <height>18</height>
        </rect>
@@ -535,8 +544,8 @@
      <widget class="QRadioButton" name="amExprssRadio">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>210</y>
+        <x>500</x>
+        <y>207</y>
         <width>131</width>
         <height>18</height>
        </rect>
@@ -548,8 +557,8 @@
      <widget class="QRadioButton" name="discoveryRadio">
       <property name="geometry">
        <rect>
-        <x>190</x>
-        <y>210</y>
+        <x>400</x>
+        <y>207</y>
         <width>83</width>
         <height>18</height>
        </rect>
@@ -561,8 +570,8 @@
      <widget class="QLabel" name="cardNumLbl">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>240</y>
+        <x>100</x>
+        <y>234</y>
         <width>101</width>
         <height>16</height>
        </rect>
@@ -579,8 +588,8 @@
      <widget class="QPlainTextEdit" name="cardNumInput">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>240</y>
+        <x>200</x>
+        <y>234</y>
         <width>291</width>
         <height>31</height>
        </rect>
@@ -589,8 +598,8 @@
      <widget class="QPushButton" name="pay">
       <property name="geometry">
        <rect>
-        <x>480</x>
-        <y>360</y>
+        <x>500</x>
+        <y>342</y>
         <width>111</width>
         <height>31</height>
        </rect>
@@ -600,6 +609,9 @@
         <pointsize>14</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(51, 107, 135);</string>
+      </property>
       <property name="text">
        <string>Pay</string>
       </property>
@@ -607,8 +619,8 @@
      <widget class="QLabel" name="rmTypeOutput">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>10</y>
+        <x>300</x>
+        <y>12</y>
         <width>81</width>
         <height>16</height>
        </rect>
@@ -620,10 +632,10 @@
      <widget class="QLabel" name="taxOutput">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>30</y>
-        <width>47</width>
-        <height>14</height>
+        <x>300</x>
+        <y>27</y>
+        <width>60</width>
+        <height>22</height>
        </rect>
       </property>
       <property name="text">
@@ -633,10 +645,10 @@
      <widget class="QLabel" name="pkgFeeOutput">
       <property name="geometry">
        <rect>
-        <x>90</x>
-        <y>50</y>
-        <width>81</width>
-        <height>16</height>
+        <x>300</x>
+        <y>45</y>
+        <width>76</width>
+        <height>22</height>
        </rect>
       </property>
       <property name="text">
@@ -646,8 +658,8 @@
      <widget class="QLabel" name="resFeeOutput">
       <property name="geometry">
        <rect>
-        <x>90</x>
-        <y>70</y>
+        <x>300</x>
+        <y>66</y>
         <width>81</width>
         <height>16</height>
        </rect>
@@ -659,10 +671,10 @@
      <widget class="QLabel" name="CreditCardImage">
       <property name="geometry">
        <rect>
-        <x>123</x>
-        <y>279</y>
-        <width>123</width>
-        <height>73</height>
+        <x>200</x>
+        <y>276</y>
+        <width>194</width>
+        <height>124</height>
        </rect>
       </property>
       <property name="text">
@@ -674,8 +686,8 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>10</y>
+        <x>200</x>
+        <y>9</y>
         <width>191</width>
         <height>41</height>
        </rect>
@@ -694,8 +706,8 @@
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>100</y>
+        <x>200</x>
+        <y>84</y>
         <width>81</width>
         <height>16</height>
        </rect>
@@ -707,8 +719,8 @@
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>300</y>
+        <x>200</x>
+        <y>270</y>
         <width>111</width>
         <height>16</height>
        </rect>
@@ -717,12 +729,12 @@
        <string>Payment Info</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_6">
+     <widget class="QLabel" name="roomSelection">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>130</y>
-        <width>91</width>
+        <x>300</x>
+        <y>114</y>
+        <width>301</width>
         <height>16</height>
        </rect>
       </property>
@@ -730,11 +742,11 @@
        <string>[ROOM_TYPE]</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_7">
+     <widget class="QLabel" name="startDate">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>160</y>
+        <x>300</x>
+        <y>141</y>
         <width>91</width>
         <height>16</height>
        </rect>
@@ -746,8 +758,8 @@
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>230</x>
-        <y>160</y>
+        <x>386</x>
+        <y>141</y>
         <width>21</width>
         <height>16</height>
        </rect>
@@ -756,11 +768,11 @@
        <string>to</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_9">
+     <widget class="QLabel" name="lastDate">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>160</y>
+        <x>400</x>
+        <y>141</y>
         <width>81</width>
         <height>16</height>
        </rect>
@@ -769,11 +781,11 @@
        <string>[END_DATE]</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_10">
+     <widget class="QLabel" name="totalNumNight">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>180</y>
+        <x>300</x>
+        <y>162</y>
         <width>91</width>
         <height>16</height>
        </rect>
@@ -782,12 +794,12 @@
        <string>[NUM_NIGHTS]</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_11">
+     <widget class="QLabel" name="parkingIncluded">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>200</y>
-        <width>141</width>
+        <x>300</x>
+        <y>183</y>
+        <width>175</width>
         <height>16</height>
        </rect>
       </property>
@@ -795,11 +807,11 @@
        <string>[PKG_INCLUDED (Y/N)]</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_12">
+     <widget class="QLabel" name="numAdults">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>220</y>
+        <x>300</x>
+        <y>204</y>
         <width>161</width>
         <height>16</height>
        </rect>
@@ -808,11 +820,11 @@
        <string>[ADULTS: {num_adults}]</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_13">
+     <widget class="QLabel" name="numKids">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>240</y>
+        <x>300</x>
+        <y>225</y>
         <width>141</width>
         <height>16</height>
        </rect>
@@ -821,24 +833,11 @@
        <string>[KIDS: {num_kids}]</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_14">
+     <widget class="QLabel" name="cardNumber">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>330</y>
-        <width>111</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>[PAYMENT_TOTAL]</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_15">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>360</y>
+        <x>300</x>
+        <y>324</y>
         <width>141</width>
         <height>16</height>
        </rect>
@@ -874,8 +873,128 @@
         <height>23</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(51, 107, 135);</string>
+      </property>
       <property name="text">
        <string>Exit</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="totalCost">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>300</y>
+        <width>90</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Payment Total</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>114</y>
+        <width>80</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Room Choice:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>138</y>
+        <width>89</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Length of Stay:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>162</y>
+        <width>106</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Number of Nights:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>183</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Parking:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>204</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Number of Adults:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>225</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Number of Kids</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>303</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Total Amount:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>324</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Card Number:</string>
       </property>
      </widget>
     </widget>
@@ -927,6 +1046,9 @@
         <width>101</width>
         <height>23</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(51, 107, 135);</string>
       </property>
       <property name="text">
        <string>Back to Form</string>

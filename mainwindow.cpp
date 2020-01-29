@@ -51,6 +51,8 @@ void MainWindow::checkShowNumNights()
 {
     if(beginDate.daysTo(endDate) > 0){
         ui->NUM_NIGHTS->setVisible(true);
+        ui->NUM_NIGHTS->setNum(numNights);
+        ui->totalNumNight->setNum(numNights);
     }
 }
 void MainWindow::checkShowNext()
@@ -109,15 +111,23 @@ void MainWindow::updateResValues()
     switch(roomType){
       case 1:
            taxes = 0.15*284;
+           ui->taxOutput->setNum((taxes));
+           ui->roomSelection->setText("Standard 2 Queen Room");
         break;
       case 2:
            taxes = 0.15*325;
+           ui->taxOutput->setNum((taxes));
+           ui->roomSelection->setText("Atrium 2 Queen Room");
         break;
       case 3:
            taxes = 0.15*290;
+           ui->taxOutput->setNum((taxes));
+           ui->roomSelection->setText("Standard 1 King Room");
         break;
       case 4:
            taxes = 0.15*350;
+           ui->taxOutput->setNum((taxes));
+           ui->roomSelection->setText("Atrium 1 King Room");
         break;
       default:
           taxes = -1; //INVALID
@@ -127,10 +137,14 @@ void MainWindow::updateResValues()
     resortFee = numNights*15;
     parkingFee = numNights*12.75;
     totalDue = resortFee + subtotal; //Parking fee included in subtotal (calculated with calculateCost()
+    ui->resFeeOutput->setNum(resortFee);
+    ui->totalDueOutput->setNum(totalDue);
+    ui->totalCost->setNum(totalDue);
 }
  void MainWindow::on_next_clicked()
 {
      ui->stackedWidget->setCurrentIndex(1);
+     updateResValues();
 }
 void MainWindow::on_diffBtn_clicked()
 {
@@ -140,6 +154,8 @@ void MainWindow::on_needPkgChkBx_toggled(bool checked)
 {
     parkingNeeded = checked;
     calculateCost();
+    ui->pkgFeeOutput->setNum(parkingFee);
+    ui->parkingIncluded->setText("Yes");
 }
 void MainWindow::on_exit_clicked() //EXIT BUTTON
 {
@@ -162,6 +178,7 @@ void MainWindow::on_queenStd_toggled(bool checked)
     }
     calculateCost();
     checkShowNext();
+    updateResValues();
 }
 void MainWindow::on_queenAtr_toggled(bool checked)
 {
@@ -200,6 +217,7 @@ void MainWindow::on_beginDate_userDateChanged(const QDate &date)
     calculateCost();
     checkShowNumNights();
     checkShowNext();
+
 }
 void MainWindow::on_endDate_userDateChanged(const QDate &date)
 {
@@ -222,12 +240,14 @@ void MainWindow::on_adultCt_valueChanged(int arg1)
     numAdults = arg1;
     calculateCost();
     checkShowNext();
+    ui->numAdults->setNum(numAdults);
 }
 void MainWindow::on_childCt_valueChanged(int arg1)
 {
     numKids = arg1;
     calculateCost();
     checkShowNext();
+    ui->numKids->setNum(numKids);
 }
 
 void MainWindow::on_visaRadio_toggled(bool checked)
