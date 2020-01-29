@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "ResortReservationRecord.h"
+#include <iostream>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -10,6 +12,13 @@ MainWindow::MainWindow(QWidget *parent)
     ui->next->setVisible(false); //Next button is not displayed
     ui->NUM_NIGHTS->setVisible(false); //Number of nights is not displayed until valid data parameters are set
     ui->est_cost_output->setVisible(false); //No estimate is available -- no value will be shown.
+
+    loadImage();
+
+    ui->AtriumRoomImage->setPixmap(imageAtrium);
+    ui->StandardRoomImage->setPixmap(imageStandard);
+    ui->CreditCardImage->setPixmap(imageCreditCard);
+    ui->QuestionImage->setPixmap(imageQuestion);
 }
 
 MainWindow::~MainWindow()
@@ -247,4 +256,35 @@ void MainWindow::on_amExprssRadio_toggled(bool checked)
     if(checked){
         cardType = 1; //American Express card
     }
+}
+void MainWindow::loadImage(){
+    QString atriumFile = ":/Images/Atrium.jpg";
+    QString standardFile = ":/Images/Standard.jpg";
+    QString creditCardFile = ":/Images/creditCardNumber.jpg";
+    QString questionFile = ":/Images/Question.jpg";
+
+
+    if(imageAtrium.load(atriumFile)){
+        std::cout << "Atrium Image loaded" << std::endl;
+        imageAtrium = imageAtrium.scaled(ui->AtriumRoomImage->size(), Qt::KeepAspectRatioByExpanding);
+    }
+    if(imageStandard.load(standardFile)){
+        std::cout << "Standard Image loaded" << std::endl;
+        imageStandard = imageStandard.scaled(ui->StandardRoomImage->size(), Qt::KeepAspectRatioByExpanding);
+    }
+    if(imageCreditCard.load(creditCardFile)){
+        std::cout << "Credit Card Image loaded" << std::endl;
+        imageCreditCard = imageCreditCard.scaled(ui->CreditCardImage->size(), Qt::KeepAspectRatioByExpanding);
+    }
+    if(imageQuestion.load(questionFile)){
+        std::cout << "Question Image loaded" << std::endl;
+        imageQuestion = imageQuestion.scaled(ui->QuestionImage->size(), Qt::KeepAspectRatio);
+    }
+
+}
+
+
+void MainWindow::on_nextButton_clicked()
+{
+     ui->stackedWidget->setCurrentIndex(1);
 }

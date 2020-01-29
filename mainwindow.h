@@ -64,6 +64,8 @@ private slots:
 
     void on_amExprssRadio_toggled(bool checked);
 
+    void on_nextButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString customerName;
@@ -95,6 +97,14 @@ private:
     double resortFee; //$15 per night
     double parkingFee;//$12.75 per night
     double totalDue;
+
+
+    QPixmap imageAtrium;
+    QPixmap imageStandard;
+    QPixmap imageCreditCard;
+    QPixmap imageQuestion;
+
+    void loadImage();
 
 };
 #endif // MAINWINDOW_H
