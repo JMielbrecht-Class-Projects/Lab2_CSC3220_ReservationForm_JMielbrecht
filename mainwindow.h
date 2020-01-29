@@ -68,6 +68,10 @@ private slots:
 
     void on_needPkgChkBx_stateChanged(int arg1);
 
+    void on_cardNumInput_textChanged();
+
+    void on_visaRadio_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString customerName;

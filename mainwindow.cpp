@@ -217,6 +217,7 @@ void MainWindow::on_beginDate_userDateChanged(const QDate &date)
     calculateCost();
     checkShowNumNights();
     checkShowNext();
+    ui->startDate->text() = beginDate.toString();
 
 }
 void MainWindow::on_endDate_userDateChanged(const QDate &date)
@@ -226,6 +227,7 @@ void MainWindow::on_endDate_userDateChanged(const QDate &date)
     checkShowNumNights();
     calculateCost();
     checkShowNext();
+    ui->startDate->text() = endDate.toString();
 }
 void MainWindow::on_bktoForm_clicked()
 {
@@ -307,4 +309,14 @@ void MainWindow::loadImage(){
 void MainWindow::on_nextButton_clicked()
 {
      ui->stackedWidget->setCurrentIndex(1);
+}
+
+void MainWindow::on_cardNumInput_textChanged()
+{
+
+}
+
+void MainWindow::on_visaRadio_clicked()
+{
+    ui->cardNumInput->inputMask() = "999-9999-9999;_";
 }
